@@ -1,1 +1,13 @@
 /* style page */
+
+.nav-main {
+	background-color: #fff;
+}
+#dash-hero  {
+	background-image: url('./logoImages/FTC-wht-sq.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+#nav-logo{
+	width: 5em;
+}
