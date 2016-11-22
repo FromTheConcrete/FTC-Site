@@ -30,14 +30,14 @@
           <span></span>
         </span>
         <div class="nav-right nav-menu">
-          <a class="nav-item is-active">
-            Home
+          <a href="#firstpage" class="nav-item is-active">
+            First Page
           </a>
-          <a class="nav-item">
+          <a class="nav-item" href="#example">
             Examples
           </a>
           <a class="nav-item">
-            Documentation
+            Last Page
           </a>
           <span class="nav-item">
             <a class="button is-success is-inverted">
@@ -53,16 +53,32 @@
   </div>
 
   <!-- Hero content: will be in the middle -->
+  <a name="firstpage"></a>
+  <section class="hero is-info is-fullheight">
   <div class="hero-body">
-    <div class="container has-text-centered">
+    <div class="container">
       <h1 class="title">
-        From the Concrete Project
+        First Page Tab
       </h1>
       <h2 class="subtitle">
-        Subtitle
+        Clicking First Page should take you here.
       </h2>
     </div>
   </div>
+</section>
+<a name="example"></a>
+  <section class="hero is-success is-fullheight">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        Example Tab
+      </h1>
+      <h2 class="subtitle">
+        Clicking Example should take you here.
+      </h2>
+    </div>
+  </div>
+</section>
 
   <!-- Hero footer: will stick at the bottom -->
   <div class="hero-foot">
