@@ -7,22 +7,29 @@
 	margin-bottom: 2%;
 	z-index: 10;
 }
-#dash-hero  {
-	background-image: url('logoImages/FTC-wht-wide.jpg');
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 70%;
-	padding-top: 5%;
-	background-color: #fff;
-
+.dash-content{
+	width: 100%;
+	position: absolute;
 }
-#nav-logo{
-	width: 2em;
-}
-
+#homeLogo{
+	width: 100%;
+	z-index: 20;
+	margin-top: 5%;
+	position: absolute;
+}	
+#homeLogo2{
+	width: 100%;
+	z-index: 20;
+	margin-top: 5%;
+	position: absolute;
+}	
 .animated {
   -webkit-animation-duration: 3s;
   animation-duration: 3s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+}
+
+#nav-logo{
+	width: 2em;
 }
