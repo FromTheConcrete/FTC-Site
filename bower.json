@@ -1,11 +1,11 @@
 {
-  "name": "From The Concrete",
+  "name": "app",
+  "main": "app.js",
   "homepage": "https://github.com/FromTheConcrete/FTC-Site",
   "authors": [
     "Michele Kempinsky <mkempinsky@icloud.com>"
   ],
   "description": "",
-  "main": "",
   "license": "MIT",
   "ignore": [
     "**/.*",
@@ -15,6 +15,10 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "^1.5.8"
+    "angular": "^1.5.8",
+    "bulma": "^0.2.3",
+    "font-awesome": "^4.7.0",
+    "animated": "^1.0.2",
+    "jquery": "^3.1.1"
   }
 }
