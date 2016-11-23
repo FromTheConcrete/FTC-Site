@@ -1,23 +1,36 @@
 /* style page */
 
+
+/**************** DASH AND NAV CUSTOMIZATION ****************/
+.nav{
+	border:none;
+	height: 5em;
+	}
 .nav-main {
-	background-color: rgba(60,58,108, .7);
+	background-color: rgba(60,58,108, .8);
+	box-shadow: 0px 5px 5px #bbbbbb;
 	position: fixed;
 	width: 100%;
 	margin-bottom: 2%;
 	z-index: 10;
 }
+#dash-hero{
+	background-image: url('images/concrete_wall_2.png');
+}
 .dash-content{
 	width: 100%;
 	position: absolute;
 }
+.dash-content h1{
+	margin-top: -10%;
+	margin-left: 3%;
+	font-size: 6em;
+}
+.dash-content h2{
+	margin-left: 3%;
+	font-size: 3em;
+}
 #homeLogo{
-	width: 100%;
-	z-index: 20;
-	margin-top: 5%;
-	position: absolute;
-}	
-#homeLogo2{
 	width: 100%;
 	z-index: 20;
 	margin-top: 5%;
@@ -32,4 +45,11 @@
 
 #nav-logo{
 	width: 2em;
+}
+
+.card{
+	margin-top: 10%;
+	width: 80%;
+	margin-bottom: 10%;
+	padding: 2%;
 }
