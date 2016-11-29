@@ -16,30 +16,31 @@
 </head>
 <body>
 	<!-- bower:js -->
+ <script src="bower_components/jquery/dist/jquery.js"></script>
 	<!-- endbower -->
-
-
 <!--++++++++++ NAV BAR ++++++++-->
 
 <div class="nav-main">
 	<image src="css/logoImages/FTC2-wht-wide-trans.png" id="nav-logo">
     <header class="nav">
         <span class="nav-toggle">
+
         </span>
         <div class="nav-center nav-menu">
-          <a class="nav-item is-active">
+          <a class="nav-item is-active" href="#home">
             HOME
           </a>
-          <a class="nav-item">
+          <a class="nav-item" href="#mission">
             MISSION
+
           </a>
-          <a class="nav-item">
+          <a class="nav-item" href="#programs">
            	PROGRAMS
           </a>
-          <a class="nav-item">
+          <a class="nav-item" href="#team">
             TEAM
           	</a>
-            <a class="nav-item">
+            <a class="nav-item" href="#donate">
             DONATE
           	</a>
         </div>
@@ -51,6 +52,7 @@
 <!--++++++++++ DASHBOARD PAGE ++++++++-->
   <!-- Hero content: will be in the middle -->
   <section class="hero is-fullheight">
+  <a name="home"></a>
   <div class="hero-body" id="dash-hero">
   <img src="css/logoImages/Rose-trans.png" class="" id="homeLogo">
     <div class="dash-content">
@@ -74,8 +76,8 @@
   </div>
 </section>
 
-
 <!--++++++++++ SECOND PAGE ++++++++-->
+<a id="mission"></a>
 <section class="hero is-medium">
 	<div class="hero-body secondHero">
 		<div class="poem">
@@ -103,7 +105,7 @@
 </section>
 
 <!--++++++++++ PROGRAMS HERO ++++++++-->
-
+<a id="programs"></a>
 <section class="hero is-medium" id="programsHero">
 	<div class="hero-body">
    		<h1 class="section-title"> PROGRAMS <hr class="style-one"></hr></h1>
@@ -114,7 +116,7 @@
 </section>
 
 <!--++++++++++ FOURTH HERO ++++++++-->
-
+<a id="team"></a>
 <section class="hero is-medium">
 	<div class="hero-body">
    		<h1 class="section-title"> MEET THE TEAM <hr class="style-one"></hr></h1>
@@ -173,6 +175,7 @@
 </footer>
 
 	<!-- inject:js -->
+  <script src="app.js"></script>
 	<!-- endinject -->
 </body>
 </html>
