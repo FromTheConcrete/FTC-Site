@@ -219,4 +219,17 @@ hr.style-one {
 .media-btn:hover{
 	background-color: rgb(168, 219, 198);
 	color: #fff;
+}
+.creditTag{
+	float: right;
+	margin-top: 8em;
+	color: #4c4c4c;
+	border-bottom: none;
+}
+.cretitTag a:visited{
+	color: #4c4c4c;
+}
+.creditTag a:hover{
+	color: #fff;
+}
 
