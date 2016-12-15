@@ -1,5 +1,9 @@
 
 
+// This is the function that connects the tab with its revelant location on the website. 
+//When A tab is clicked this function find the ID with the same name as the and scrolls down to it.
+ //This doesn't really need to be edited or anything.
+
 
 $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
@@ -8,7 +12,7 @@ $(function() {
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       if (target.length) {
         $('html, body').animate({
-          scrollTop: target.offset().top -150
+          scrollTop: target.offset().top -120
         }, 1000);
         return false;
       }

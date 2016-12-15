@@ -10,6 +10,9 @@ html{
   animation-fill-mode: both;
 }
 
+a {
+	color: #fff;
+}
 
 
 /**************** DASH AND NAV CUSTOMIZATION ****************/
@@ -219,4 +222,18 @@ hr.style-one {
 .media-btn:hover{
 	background-color: rgb(168, 219, 198);
 	color: #fff;
+}
+.creditTag{
+	float: right;
+	margin-top: 8em;
+	color: #ccc;
+	border-bottom: none;
+}
+
+.content a:not(.button):visited {
+    color: #fff;
+}
+.footer a:not(.icon), .footer a:visited:not(.icon) {
+    border-bottom: none;
+}
 

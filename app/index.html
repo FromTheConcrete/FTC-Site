@@ -20,6 +20,12 @@
 	<!-- endbower -->
 <!--++++++++++ NAV BAR ++++++++-->
 
+<!-- **NOTES**
+  Here is the navigation bar where you can update the names of the tabs.
+  the "href=" tag is what connects the tab with section of the page that it scrolls
+  down to.
+-->
+
 <div class="nav-main">
 	<image src="css/logoImages/FTC2-wht-wide-trans.png" id="nav-logo">
     <header class="nav">
@@ -27,7 +33,7 @@
 
         </span>
         <div class="nav-center nav-menu">
-          <a class="nav-item is-active" href="#home">
+          <a class="nav-item" href="#home">
             HOME
           </a>
           <a class="nav-item" href="#mission">
@@ -50,15 +56,27 @@
 
 
 <!--++++++++++ DASHBOARD PAGE ++++++++-->
+
+<!-- **NOTES**
+  Here is what would be considered the "homepage" section. This is where you
+  have the screen title and subtitle which you can edit by simply changing the
+  text between the <h1></h1> and <h2></h2> below. 
+-->
   <!-- Hero content: will be in the middle -->
   <section class="hero is-fullheight">
-  <a name="home"></a>
+  <a id="home"></a>
   <div class="hero-body" id="dash-hero">
   <img src="css/logoImages/Rose-trans.png" class="" id="homeLogo">
     <div class="dash-content">
     	<h1 class="animated fadeIn">FROM THE CONCRETE</h1>
     	<h2>HELPING OUR YOUTH REACH THEIR FULL POTENTIAL</h2>
     	
+<!-- **NOTES**
+  Below are the 3 images on the home page, below the title and subtitle. If you would like to change 
+  out these images. Save an image from your desktop the the images folder (located inside the css folder).
+  Then you will need to change the name of the image to the name of your new image. Example: 
+  "css/images/library.jpg" would change to "css/images/NEW_IMAGE.jpeg"
+-->
     			<img src="css/images/library.jpg" class="dashImages animated fadeIn">
     		
     			<img src="css/images/laugh.jpeg" class="dashImages animated fadeIn">
@@ -66,17 +84,17 @@
     			<img src="css/images/basketball.jpeg" class="dashImages animated fadeIn">
     	
     	</div>
-    	<!-- <div class="child-images">
-	    	<img src="css/images/childThree.jpeg">
-	    	<img src="css/images/childTwo.jpeg">
-	    	<img src="css/images/childOne.jpeg">
-	    </div> -->
     
   	</div>
   </div>
 </section>
 
 <!--++++++++++ SECOND PAGE ++++++++-->
+
+<!-- **NOTES**
+  This is the start of the section with the poem. If you wish to edit this section, 
+  edit the <div class="poem"></div>
+-->
 <section class="hero is-medium">
 	<div class="hero-body secondHero">
 		<div class="poem">
@@ -95,6 +113,12 @@
 </section>
 
 <!--++++++++++ MISSION HERO ++++++++-->
+
+<!-- **NOTES**
+  Here is your mission statement. To edit this, you can change the text inside of the 
+  <p class="mission-statement"></p>
+-->
+
 <a id="mission"></a>
 <section class="hero" id="missionHero">
 	<div class="hero-body">
@@ -104,6 +128,11 @@
 </section>
 
 <!--++++++++++ PROGRAMS HERO ++++++++-->
+
+<!-- **NOTES**
+  Here is the section about programs. 
+-->
+
 <a id="programs"></a>
 <section class="hero is-medium" id="programsHero">
 	<div class="hero-body">
@@ -115,6 +144,24 @@
 </section>
 
 <!--++++++++++ FOURTH HERO ++++++++-->
+
+<!-- **NOTES**
+  Here is the section about your team. If you would like to change the image save an image from your desktop the the images folder (located inside the css folder).
+  Then you will need to change the name of the image to the name of your new image. Example: 
+  "css/images/library.jpg" would change to "css/images/NEW_IMAGE.jpeg"
+
+  If you would like to add a new team member copy this code:
+
+    <div class="team">
+        <img src="css/images/NEW_MEMBER_IMAGE.jpeg" class="team-images">
+        <label>NEW MEMBER NAME</label>
+    </div>
+
+  Then change the image and name to corresponding new member and paste where you see: 
+  **! Add member here !**
+
+
+-->
 <a id="team"></a>
 <section class="hero is-medium">
 	<div class="hero-body">
@@ -135,6 +182,7 @@
    			</div>
    		</p>
    		
+
    		<p class="team-span">
    			<div class="team">
    			<img src="css/images/william.jpeg" class="team-images">
@@ -148,27 +196,38 @@
    			<img src="css/images/ron.jpeg" class="team-images">
    			<label>RON JACKSON</label>
    			</div>
+        <!-- **! Add member here !** -->
    		</p>
    	</div>
 </section>
 
-<iframe width="100%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/198086249&amp;auto_play=true&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=false"></iframe>
+<!-- **NOTES**
+  Below is the music, if you'd like to remove this simply delete everything between the <iframe></iframe>
+-->
+
+<iframe width="100%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/198086249&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=false"></iframe>
 
 <!--++++++++++ FOOTER HERO ++++++++-->
+
+<!-- **NOTES**
+  Below is everything inside the footer. To add links to social media accounts. Include the url inbetween the quotation marks after the href=
+  Example: <a href="www.FTC_facebookpage.com">
+-->
+
 <footer class="footer">
   <div class="container">
     <div class="content">
    		<h2>STAY IN TOUCH</h2>
    			<div class="media-btn button">
-				<i class="fa fa-facebook" aria-hidden="true"></i>
+				<a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
 			</div>
 			<div class="media-btn button">
-				<i class="fa fa-instagram" aria-hidden="true"></i>
+				<a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
 			</div>
 			<div class="media-btn button">
-				<i class="fa fa-linkedin" aria-hidden="true"></i>
+				<a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
 			</div>
-
+      <p class="creditTag">Site created by <a href="https://www.linkedin.com/in/michelekempinsky/">Michele Kempinsky</a> & <a href="https://www.linkedin.com/in/juansebastianleon">Sebastian Leon</a></p>
     </div>
   </div>
 </footer>
