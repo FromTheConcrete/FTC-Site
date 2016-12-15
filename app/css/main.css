@@ -10,6 +10,9 @@ html{
   animation-fill-mode: both;
 }
 
+a {
+	color: #fff;
+}
 
 
 /**************** DASH AND NAV CUSTOMIZATION ****************/
@@ -223,13 +226,14 @@ hr.style-one {
 .creditTag{
 	float: right;
 	margin-top: 8em;
-	color: #4c4c4c;
+	color: #ccc;
 	border-bottom: none;
 }
-.cretitTag a:visited{
-	color: #4c4c4c;
+
+.content a:not(.button):visited {
+    color: #fff;
 }
-.creditTag a:hover{
-	color: #fff;
+.footer a:not(.icon), .footer a:visited:not(.icon) {
+    border-bottom: none;
 }
 
