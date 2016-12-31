@@ -45,6 +45,9 @@
                     <a class="nav-item" href="#team">
             TEAM
             </a>
+            <a class="nav-item" href="#contact">
+            CONTACT
+            </a>
                     <a class="nav-item" href="#donate">
             DONATE
             </a>
@@ -100,6 +103,10 @@
             </div>
         </div>
     </section>
+    <!-- **NOTES**
+  Below is the music, if you'd like to remove this simply delete everything between the <iframe></iframe>
+-->
+    <iframe width="100%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/198086249&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=false"></iframe>
     <!--++++++++++ MISSION HERO ++++++++-->
     <!-- **NOTES**
   Here is your mission statement. To edit this, you can change the text inside of the 
@@ -144,7 +151,7 @@
 
 -->
     <a id="team"></a>
-    <section class="hero is-medium">
+    <section class="hero is-medium" id="teamHero">
         <div class="hero-body">
             <h1 class="section-title"> MEET THE TEAM <hr class="style-one"></hr></h1>
             <h2 class="section-subtitle">Since the beginning of 2016, the founders of From The Concrete has devoted its energy to preparing programs to provide our youth.</h2>
@@ -179,57 +186,60 @@
             </p>
         </div>
     </section>
-    <!--Below this will be the Contact Us information-->
-    <div id="make" class="center"><a  href="#make" class="button is-large">Contact Us</a></div>
-    <div>
-        <section class="hero">
-            <div class="hero-body">
-                <div id="map"></div>
-                <!-- Replace the value of the key parameter with your own API key. -->
-                <script>
 
-                var map;
-                function initMap() {
-                    var uluru = {
-                        lat: 32.767132,
-                        lng: -117.1794063
-                    };
-                     map = new google.maps.Map(document.getElementById('map'), {
-                        zoom: 16,
-                        center: uluru
-                    });
-                    var marker = new google.maps.Marker({
-                        position: uluru,
-                        map: map
-                    });
-                }
-                </script>
-                <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJlGWk94dKgnL_VZ-0y52RC-TQy9xZsEo&callback=initMap">
-                </script>
-              
-                <div id="mainform">
-                    <!-- Required Div Starts Here -->
-                    <form id="form">
-                        <h3 class="contact3">Contact Form</h3>
-                        <p id="returnmessage"></p>
-                        <label>Name: <span>*</span></label>
-                        <input type="text" id="name" placeholder="Name" />
-                        <label>Email: <span>*</span></label>
-                        <input type="text" id="email" placeholder="Email" />
-                        <label>Subject: <span>*</span></label>
-                        <input type="text" id="contact" placeholder="Subject of the message" />
-                        <label>Message:</label>
-                        <textarea id="message" placeholder="Message......."></textarea>
-                        <input type="button" id="submit" value="Send Message" />
-                    </form>
-                </div>
+
+    <!--Below this will be the Contact Us information-->
+    <!-- <div id="make" class="center"><a  href="#make" class="button is-large">Contact Us</a></div> -->
+    <a id="contact"></a>
+    <section class="hero is-medium" id="contactHero">
+    <div>
+        <div class="hero-body">
+        <h1 class="section-title"> CONTACT US <hr class="style-one"></hr></h1>
+            <div id="map">
+            <!-- Replace the value of the key parameter with your own API key. -->
+            <p>6486 Friars Rd #108, San Diego, CA 92108, USA</p>
+            <script>
+            var map;
+            function initMap() {
+                var uluru = {
+                    lat: 32.767132,
+                    lng: -117.1794063
+                };
+                 map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 12,
+                    center: uluru
+                });
+                var marker = new google.maps.Marker({
+                    position: uluru,
+                    map: map
+                });
+            }
+            </script>
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJlGWk94dKgnL_VZ-0y52RC-TQy9xZsEo&callback=initMap">
+            </script>
             </div>
-        </section>
+
+          
+            <div id="mainform">
+                <!-- Required Div Starts Here -->
+                <form id="form">
+                    <h3 class="contact3">Contact Form</h3>
+                    <p id="returnmessage"></p>
+                    <label>Name: <span>*</span></label>
+                    <input type="text" id="name" placeholder="Name" />
+                    <label>Email: <span>*</span></label>
+                    <input type="text" id="email" placeholder="Email" />
+                    <label>Subject: <span>*</span></label>
+                    <input type="text" id="contact" placeholder="Subject of the message" />
+                    <label>Message:</label>
+                    <textarea id="message" placeholder="Message......."></textarea>
+                    <input type="button" id="submit" value="Send Message" />
+                </form>
+            </div>
+        </div>
     </div>
-    <!-- **NOTES**
-  Below is the music, if you'd like to remove this simply delete everything between the <iframe></iframe>
--->
-    <iframe width="100%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/198086249&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=false"></iframe>
+    </section>
+    
     <!--++++++++++ FOOTER HERO ++++++++-->
     <!-- **NOTES**
   Below is everything inside the footer. To add links to social media accounts. Include the url inbetween the quotation marks after the href=
@@ -249,8 +259,11 @@
                     <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                 </div>
                 <p class="creditTag">Site created by <a href="https://www.linkedin.com/in/michelekempinsky/">Michele Kempinsky</a> & <a href="https://www.linkedin.com/in/juansebastianleon">Sebastian Leon</a></p>
+
+
             </div>
         </div>
+
     </footer>
     <!-- inject:js -->
     <script src="app.js"></script>
