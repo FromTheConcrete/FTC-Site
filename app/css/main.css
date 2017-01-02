@@ -249,13 +249,13 @@ hr.style-one {
 }
 
 #map {
-    height: 400px;
-    width: 400px;
+    height: 30em;
+    width: 30em;
     border: 5px solid #fff;
     border-radius: 1px;
     padding: 20px 30px 35px;
     box-shadow: 0 0 15px;
-    margin: -20px 25px 0 150px;
+    margin: 30px 25px 0 150px;
     display: inline;
     float:left;
 }
@@ -264,7 +264,7 @@ hr.style-one {
     width: 960px;
     margin: 20px auto;
     padding-top: 20px;
-    font-family: serif;
+    font-family: 'Lato', sans-serif;
 }
 
 #form {
@@ -272,14 +272,27 @@ hr.style-one {
     padding: 20px 30px;
     font-size: 14px;
     font-weight: bold;
-    width: 350px;
-    margin: -50px 25px 0 35px;
+    width: 30em;
+    height: 30em;
+    margin: 15px 25px 0 35px;
     float: right;
+    background-color: rgb(121, 106, 128);
+    box-shadow: 0 0 15px;
+}
+#form,.label{
+    color: #fff;
+}
+#submit{
+    color: #fff;
+    width: 100%;
+    background-color: rgb(58, 45, 65);
 }
 
 .contact3 {
     text-align: center;
     font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 5px;
 }
 
 input {
@@ -294,7 +307,7 @@ input {
 input[type=button] {
     background-color: #123456;
     border: 1px solid white;
-    font-family: serif;
+    font-family: 'Lato', sans-serif;
     font-weight: bold;
     font-size: 18px;
     color: white;
@@ -326,7 +339,9 @@ textarea {
   margin: -10px 25px 0px 150px;
   padding: 0px 0px 50px 0px;
 }
-
+#contact-title{
+    margin-bottom: 5px;
+}
 /**************** FOOTER ****************/
 
 .footer {
