@@ -342,6 +342,11 @@ textarea {
 #contact-title{
     margin-bottom: 5px;
 }
+.contactIcon{
+    color: rgb(121, 106, 128);
+    margin-right: 10px;
+    font-size: 1.5em;
+}
 /**************** FOOTER ****************/
 
 .footer {
