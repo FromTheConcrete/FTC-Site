@@ -255,11 +255,7 @@ hr.style-one {
     border-radius: 1px;
     padding: 20px 30px 35px;
     box-shadow: 0 0 15px;
-<<<<<<< HEAD
-    margin: 0px 25px 0 150px;
-=======
     margin: 30px 25px 0 150px;
->>>>>>> ffcc4dbc979e420472cd3ec0285904b0df5b58d4
     display: inline;
     float:left;
 }
@@ -276,14 +272,9 @@ hr.style-one {
     padding: 20px 30px;
     font-size: 14px;
     font-weight: bold;
-<<<<<<< HEAD
-    width: 350px;
-    margin: -40px 25px 0 35px;
-=======
     width: 30em;
     height: 30em;
     margin: 15px 25px 0 35px;
->>>>>>> ffcc4dbc979e420472cd3ec0285904b0df5b58d4
     float: right;
     background-color: rgb(121, 106, 128);
     box-shadow: 0 0 15px;
