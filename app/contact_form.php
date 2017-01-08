@@ -1,4 +1,4 @@
-<?php
+		<?php
 // Fetching Values from URL.
 $name = $_POST['name1'];
 $email = $_POST['email1'];
