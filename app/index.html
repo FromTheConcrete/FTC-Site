@@ -18,7 +18,6 @@
 <body>
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="contact_form.js"></script>
     <!-- endbower -->
     <!--++++++++++ NAV BAR ++++++++-->
     <!-- **NOTES**
@@ -190,10 +189,12 @@
 
 
     <!--Below this will be the Contact Us information-->
+    
     <a id="contactus"></a>
-    <section class="hero">
-        <div class="hero-body">
+    
+             
             <h1 class="section-title" id="special-title"> CONTACT US <hr class="style-one"></hr></h1>
+            <div class="wrapcontact">
             <div id="map"></div>
             <!-- Replace the value of the key parameter with your own API key. -->
             <script>
@@ -216,31 +217,39 @@
             </script>
             <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJlGWk94dKgnL_VZ-0y52RC-TQy9xZsEo&callback=initMap">
             </script>
-            <div id="mainform">
+            
                 <!-- Required Div Starts Here -->
-                <form id="form">
-                    <h3 class="contact3">Drop Us A Message</h3>
-                    <p id="returnmessage"></p>
-                    <label>Name: <span>*</span></label>
-                    <input type="text" id="name" placeholder="Name" />
-                    <label>Email: <span>*</span></label>
-                    <input type="text" id="email" placeholder="Email" />
-                    <label>Subject: <span>*</span></label>
-                    <input type="text" id="contact" placeholder="Subject of the message" />
-                    <label>Message:</label>
-                    <textarea id="message" placeholder="Message......."></textarea>
-                    <button class="button" id="submit"> Send Message <i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
-                </form>
+                <div class="centerdiv"></div>
+                 <div id="mainform"><form id="form">
+          <h3 class="contact3">Drop Us A Message</h3>
+          <p id="returnmessage"></p>
+          <label>Name: <span>*</span></label>
+          <input type="text" id="name" placeholder="Name" />
+          <label>Email: <span>*</span></label>
+          <input type="text" id="email" placeholder="Email" />
+          <label>Subject: <span>*</span></label>
+          <input type="text" id="subject" placeholder="Subject of the message" />
+          <label>Message:</label>
+          <textarea id="message" name="message" placeholder="Message......."></textarea>
+          <button class="button" id="submit"> Send Message <i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+        </form>
             </div>
-        </div>
-        <p class="streetaddress"><a href="https://www.google.com/maps/place/6486+Friars+Rd+%23108,+San+Diego,+CA+92108/@32.767132,-117.1794063,17z/data=!3m1!4b1!4m5!3m4!1s0x80deaacc42aaf99d:0x31c7949cdcfb7e29!8m2!3d32.767132!4d-117.1772176">6486 Friars Rd #108, San Diego, CA 92108, USA</a>
+    
+    </div>
+      
+    
+
+
+        <div class="street"><p ><a href="https://www.google.com/maps/place/6486+Friars+Rd+%23108,+San+Diego,+CA+92108/@32.767132,-117.1794063,17z/data=!3m1!4b1!4m5!3m4!1s0x80deaacc42aaf99d:0x31c7949cdcfb7e29!8m2!3d32.767132!4d-117.1772176">6486 Friars Rd #108, San Diego, CA 92108, USA</a>
             <br>
             <a href="tel:+1.6507034999"> Phone:+1.6507034999</a>
             <br>
             <a href="tel:+1.6507034999"> Fax:+1.6507034999</a></p>
-    </section>
-    </div>
-    </section>
+
+        </div>
+    
+   
+   
     
     <!--++++++++++ FOOTER HERO ++++++++-->
     <!-- **NOTES**

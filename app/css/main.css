@@ -202,9 +202,10 @@ hr.style-one {
 .team label {
     color: rgb(0, 128, 128);
     font-family: 'Lato', sans-serif;
-    font-size: 1.2em;
-    width: 100%;
-     margin-left: 60px;
+    font-size:1.1em;
+    white-space: nowrap;
+    margin-left: 0px; 
+
 
 }
 
@@ -248,34 +249,60 @@ hr.style-one {
     text-align: center;
 }
 
-#map {
+
+
+/*#map {
     height: 30em;
     width: 30em;
-    border: 5px solid #fff;
-    border-radius: 1px;
+    
+    margin: 30px 20% 0 18%;
+    display:inline-block;
     padding: 20px 30px 35px;
-    box-shadow: 0 0 15px;
-    margin: 30px 25px 0 150px;
-    display: inline;
+    
+    
     float:left;
 }
 
 #mainform {
-    width: 960px;
-    margin: 20px auto;
+	display: inline-block;
+    margin:;
     padding-top: 20px;
     font-family: 'Lato', sans-serif;
+}*/
+
+
+.wrapcontact {
+    display: flex;
+    justify-content: center;
+    padding: 40px; 
+    margin:auto;
+    
 }
 
+#map {
+  height:30em;
+  width:30em;
+  border: 5px solid #fff;
+  border-radius: 1px;
+  box-shadow: 0 0 15px;
+}
+
+   .centerdiv {
+   	width:20%;
+
+
+   }
+   
+
+
+
 #form {
-    display:inline-block;
+    
     padding: 20px 30px;
     font-size: 14px;
     font-weight: bold;
     width: 30em;
     height: 30em;
-    margin: 15px 25px 0 35px;
-    float: right;
     background-color: rgb(121, 106, 128);
     box-shadow: 0 0 15px;
 }
@@ -333,11 +360,12 @@ textarea {
     text-align: center;
 }
 
-.streetaddress {
+.street {
   color:black;
   text-decoration: underline;
-  margin: -20px 25px 0px 150px;
   padding: 0px 0px 50px 0px;
+  text-align: center;
+
 }
 #contact-title{
     margin-bottom: 5px;
@@ -386,3 +414,40 @@ textarea {
 .footer a:visited:not(.icon) {
     border-bottom: none;
 }
+
+
+
+
+@media (max-width: 1100px){
+  .wrapcontact {
+     flex-flow:column wrap;
+     justify-content: center;
+  }
+
+  #map, #mainform {
+
+  	margin:auto;
+  }
+ 
+
+
+ #mainform {
+
+ 	margin-top:30px;
+ }
+
+.team label {
+    color: rgb(0, 128, 128);
+    font-family: 'Lato', sans-serif;
+    font-size:1.1em;
+    white-space: nowrap;
+    margin-left: 0px; 
+
+
+}
+
+@media (max-width: 700px){
+  .nav {
+
+  	font-size:1.2em;
+  }
