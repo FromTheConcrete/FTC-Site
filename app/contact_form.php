@@ -1,16 +1,16 @@
-<?php
+		<?php
 // Fetching Values from URL.
-$name = $_POST['name1'];
-$email = $_POST['email1'];
-$message = $_POST['message1'];
-$contact = $_POST['contact1'];
+$name = $_POST['name'];
+$email = $_POST['email'];
+$subject = $_POST['subject'];
+$message = $_POST['message'];
 $email = filter_var($email, FILTER_SANITIZE_EMAIL); // Sanitizing E-mail.
 // After sanitization Validation is performed
 if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
 //if (!preg_match("/^[0-9]{10}$/", $contact)) {
 //echo "<span>* Please Fill Valid Contact No. *</span>";
 ///} else {
-$subject = $name, $contact;
+$subject = $subject;
 // To send HTML mail, the Content-type header must be set.
 $headers = 'MIME-Version: 1.0' . "\r\n";
 $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
@@ -20,7 +20,7 @@ $template = '<div style="padding:50px; color:white;">Hello ' . $name . ',<br/>'
 . '<br/>Thank you...! For Contacting Us.<br/><br/>'
 . 'Name:' . $name . '<br/>'
 . 'Email:' . $email . '<br/>'
-. 'Subject:' . $contact . '<br/>'
+. 'Subject:' . $subject . '<br/>'
 . 'Message:' . $message . '<br/><br/>'
 . 'This is a Contact Confirmation mail.'
 . '<br/>'
